@@ -1,0 +1,41 @@
+body{background-color: black;}
+h1,h2,h3{font-family:arial black,Arial, Helvetica, sans-serif;}
+body{font-family:Arial,sans-serif;}
+h1{color:#ff5a00;font-size: 40px;font-family:Arial Black,Arial,Sans-serif;text-align: center ;}
+h2{color:#ff5a00;font-size: 30px;font-family:Arial Black,Arial,Sans-serif;text-align: center;}
+h3{color:#ffffff;font-size: 25px;font-family: Arial Black,Arial,Sans-serif;text-align: center;}
+.destacado{color:#ffffff;font-size: 20px;text-align: center;}
+.producto{text-align: center;}
+.descripcion{color:#ffffff;font-size: 16 px;}
+#inicio{
+    background-color: #1a1a1a;
+    text-align: center;
+}
+header{
+    background-color: #111111;
+}
+nav{
+    background-color: #ff5a00;
+}
+section{
+    background-color: #1a1a1a;
+}
+footer{
+    background-color: #111111;
+}
+p{
+    color:#ffffff
+    background-color: transparent;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+a{
+    color:white;
+}
+#imagen-principal{
+    text-align: left;
+    width: 70px;
+    height: auto;
+}
