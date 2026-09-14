@@ -1,24 +1,48 @@
 body{background-color: black;}
 h1,h2,h3{font-family:arial black,Arial, Helvetica, sans-serif;}
 body{font-family:Arial,sans-serif;}
-h1{color:#ff5a00;font-size: 40px;font-family:Arial,Sans-serif;text-align: center ;}
-h2{color:#ff5a00;font-size: 30px;font-family:Arial,Sans-serif;text-align: center;}
-h3{color:#ffffff;font-size: 25px;font-family: Arial,Sans-serif;text-align: center;}
+h1{color:#ff5a00;font-size: 40px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;text-align: center ;}
+h2{color:#ff5a00;font-size: 30px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif,Sans-serif;text-align: center;}
+h3{color:#ffffff;font-size: 25px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;text-align: center;}
+
+
 .destacado{color:#ffffff;font-size: 20px;text-align: center;}
 .producto{text-align: center;}
 .descripcion{color:#ffffff;font-size: 16 px;}
-#inicio{
-    background-color: #1a1a1a;
-    text-align: center;
+#Inicio{
+    background-color:black;
+    padding: 80px;
+    margin: 0;
+    
+}
+#Inicio img{
+    background-color: black;
+    width: 500px;
+    height: auto;
+}
+.texto-inicio{
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+}
+.imagen-inicio{
+    display: inline-block;
+    width: 45%;
 }
 header{
-    background-color: #111111;
+    background-color: #000000;
+    background-image: url(auto\ negro-fondo.png);
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 230px;
+    margin: 0;
 }
 nav{
     background-color: #ff5a00;
 }
 section{
-    background-color: #1a1a1a;
+    background-color:black;
 }
 footer{
     background-color: #111111;
@@ -45,7 +69,7 @@ a:hover{
 }
 .producto{
     display: inline-block;
-    background-color: #1a1a1a;
+    background-color:#1a1a1a;
     color: white;
     text-align: center;
     width: 250px;
@@ -76,19 +100,21 @@ nav a{
     margin: 10px;
 }
 nav{
-    background-color: red;
+    background-color:#ff5a00;
     padding: 30px;
 }
 nav a{
     display: inline-block;
     color: white;
-    margin: 20px;
-    }
+    margin: 20px; 
+   }
+.logo{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    width: 360px;
+    height: auto;
+}
 
     
 
-#imagen-principal{
-    text-align: left;
-    width: 70px;
-    height: auto;
-}
