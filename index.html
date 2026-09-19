@@ -2,9 +2,11 @@
 <html lang="es">
 <head>
      <meta charset="UTF-8">
-     <meta name="viewport"content="width=device-width," initial-scale=1.0">
+     <meta name="viewport"content="width=device-width" initial-scale="1.0">
      <title>accesorios para tu auto</title>
      <link rel="stylesheet" href="style.css">
+     <script src="script.js" defer></script>
+
 </head>
 <body>
 <header> 
@@ -22,12 +24,17 @@
 </nav>
 <main>
     <section id="Inicio">
-            <h2>
-                Bienvenidos a CR ACCESORIOS PARA TU AUTO
-            </h2>
-            <p>
+            <h2 id="tituloInicio">Bienvenidos a CR ACCESORIOS PARA TU AUTO</h2>
+             <p>
                 Accesorios y Productos para tu Auto, pensado para mejorar, cuidar y personalizar tu Vehiculo
             </p>
+            <button id="botonCambiar">Cambiar texto</button>
+            <div class="tamaño-texto">
+                <p>Personaliza el tamaño del texto</p>
+                <button id="disminuir">A-</button>
+                <button id="normal">A</button>
+                <button id="aumentar">A+</button>
+            </div>
         </section>  
 
     <section id="Categorias">
@@ -60,6 +67,12 @@
         <h2>Productos seleccionados</h2>
         <p>Algunos de nuestros Productos destacados </p>
         <h3>Shampoos</h3>
+        <p class="oculto">
+            Encontrá Shampoos y Ceras para el cuidado de tu Auto.
+        </p>
+        <button class="ver-mas">[Ver Mas]</button>
+    </article>    
+        
         <article class="producto">
             <img src="shampoo toxic shine Banana.jpeg" alt="Sampoo Banana">
             <h4>Shampoo toxic shine Banana</h4>
@@ -68,7 +81,7 @@
             </p>
         </article>
         <article class="producto">
-            <img src="toxic shine wax.jpeg" alt="Shampoo Toxic shine wax">
+            <img src="img/toxic shine wax.jpeg" alt="Shampoo Toxic shine wax">
             <H4>Shampoo toxic shine max</H4>
             <p class="descripcion">
                 Shampoo para el lavado y cuidado del auto
@@ -163,21 +176,3 @@
         </article>
 
         
-
-        
-
-
-       
-        </article>
-    </section>
-    <section id="Contactos">
-        <h2>Contactos</h2>
-        <img src="programacion Agus Oller/cr accesorios.jpg" alt="flayer cr accesorios">
-        <p>¿Tenes duda sobre algun producto?</p>
-        <p>Instagram: @cr.accesoriosautos</p>
-    </section>
-
-    <a href="https://www.instagram.com/cr.accesoriosautos/" target="_blank">Link de Instagram</a>
-</main>
-</body>    
-</html>       
