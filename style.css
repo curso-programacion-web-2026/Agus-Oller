@@ -1,9 +1,9 @@
 body{background-color: black;}
-h1,h2,h3{font-family:arial black,Arial, Helvetica, sans-serif;}
-body{font-family:Arial,sans-serif;}
-h1{color:#ff5a00;font-size: 40px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;text-align: center ;}
-h2{color:#ff5a00;font-size: 30px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif,Sans-serif;text-align: center;}
-h3{color:#ffffff;font-size: 25px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;text-align: center;}
+h1,h2,h3{font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif black,Arial, Helvetica, sans-serif;}
+body{font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+h1{color:#ff5a00;font-size: 40px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;text-align: center ;}
+h2{color:#ff5a00;font-size: 30px;font-family:system-ui;;text-align: center;}
+h3{color:#ffffff;font-size: 25px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;text-align: center;}
 
 
 .destacado{color:#ffffff;font-size: 20px;text-align: center;}
@@ -126,12 +126,39 @@ button{
 .tamaño-texto p{
     color: white;
 }
-.tamaño-texto button{
+.controles-texto{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    gap: 6px;
+    padding: 8px;
+    background-color: #111111;
+    border: 1px solid #ff5a00;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+.controles-texto button{
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
     background-color: #ff5a00;
     color: white;
-    border: none;
-    padding: 8px 14px;
-    margin: 5px;
+    font-weight: bold;
+    font-size: 14px;
     cursor: pointer;
 }
+.controles-texto button:hover{
+    background-color: white;
+    color: #ff5a00;
+}
+/* const formulario= document.getElementByld("formulario");
+formulario.addEventListener("submit",function(event)) */
 
+
+
+
+
+    
