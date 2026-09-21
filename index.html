@@ -5,7 +5,7 @@
      <meta name="viewport"content="width=device-width" initial-scale="1.0">
      <title>accesorios para tu auto</title>
      <link rel="stylesheet" href="style.css">
-     <script src="script.js" defer></script>
+     <script src="Scrpit.js" defer></script>
 
 </head>
 <body>
@@ -25,15 +25,13 @@
 <main>
     <section id="Inicio">
             <h2 id="tituloInicio">Bienvenidos a CR ACCESORIOS PARA TU AUTO</h2>
-             <p>
+             <p id="textoInicio">
                 Accesorios y Productos para tu Auto, pensado para mejorar, cuidar y personalizar tu Vehiculo
             </p>
-            <button id="botonCambiar">Cambiar texto</button>
-            <div class="tamaño-texto">
-                <p>Personaliza el tamaño del texto</p>
-                <button id="disminuir">A-</button>
-                <button id="normal">A</button>
-                <button id="aumentar">A+</button>
+            <div class="controles-texto">
+                <button id="disminuir" aria-label="disminuir tamaño">A-</button>
+                <button id="normal" aria-label="tamaño normal">A</button>
+                <button id="aumentar" aria-label="aumentar tamaño">A+</button>
             </div>
         </section>  
 
@@ -70,7 +68,7 @@
         <p class="oculto">
             Encontrá Shampoos y Ceras para el cuidado de tu Auto.
         </p>
-        <button class="ver-mas">[Ver Mas]</button>
+        <button class="verMas">[Ver Mas]</button>
     </article>    
         
         <article class="producto">
@@ -105,7 +103,7 @@
     </section>
     <section id="Productos">
         <h2>Productos</h2>
-        <h3>Shampoo</h3>
+        <h3>SHAMPOO</h3>
         <article class="producto">
             <h3>Shampoo Banana</h3>
             <p>Categoría:Shampoo</p>
@@ -118,7 +116,7 @@
             <h3>Shampoo Hyper Black</h3>
             <p>Categoría:Shampoo</p>
         </article>
-        <h3>Ceras</h3>
+        <h3>CERAS</h3>
         <article class="producto">
             <h3>Cera Cherry</h3>
             <p>Categoría:Ceras</p>
@@ -131,7 +129,7 @@
             <h3>Cera Luxury</h3>
             <p>Categoría:Ceras</p>
         </article>
-        <h3>Acondicionadores Interiores</h3>
+        <h3>ACONDICIONADORES INTERIORES</h3>
         <article class="producto">
             <h3> Bubble Gum Revividor Interior</h3>
             <p>Categoría:Acondicionadores Interiores</p>
@@ -174,5 +172,17 @@
             <h3>Bug Remover Limpiador</h3>
             <p>Categoría:Limpiadores-APC</p>
         </article>
+
+
+        <form id="formulario">
+            <input id="nombre">
+            <input id="email">
+            <textarea id="mensaje"></textarea>
+            <button type="submit">Enviar mensaje</button>
+            <p id="resultado"></p>
+        </form>
+
+        
+
 
         
