@@ -1,6 +1,5 @@
 const botonesVerMas= document.querySelectorAll(".verMas");
-
-// [Ver Menos]
+//Ver Menos
 function alternarInformacion(event){
     const boton=event.target;
     const infoExtra= boton.previousElementSibling;
@@ -19,23 +18,20 @@ botonesVerMas.forEach(function(boton)
     boton.addEventListener('click', alternarInformacion);
 });
 
-
-
-
-
-// const botonCambiar = document.getElementById("botonCambiar");
-// const tituloInicio = document.getElementById("tituloInicio");
-// let contador=0;
-// botonCambiar.addEventListener("click", function(){
-//     contador++;
-//     if(contador===1){
-//         tituloInicio.textContent= "¡Bienvenidos a CR ACCESORIOS!";
-//     } else if(contador===2){
-//         tituloInicio.textContent="¡Todo para tu Vehiculo!";
-//     } else if(contador===3){
-//         tituloInicio.textContent="¡Gracias por visitar CR ACCESORIOS";
-//     }
-// });
+const botonCambiar =
+ document.getElementById("botonCambiar");
+ const tituloInicio = 
+ document.getElementById("tituloInicio");
+ let contador=0;
+ botonCambiar.addEventListener("click", function(){
+     contador++;
+     if(contador===1){
+         tituloInicio.textContent= "¡Bienvenidos a CR ACCESORIOS!";
+     } else if(contador===2){   tituloInicio.textContent="¡Todo para tu Vehiculo!";
+     } else if(contador===3){
+     tituloInicio.textContent="¡Gracias por visitar CR ACCESORIOS";
+     }
+    });
 
 const TextoInicio = document.getElementById("TextoInicio");
 const disminuir = document.getElementById("disminuir");
