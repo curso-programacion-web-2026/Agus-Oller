@@ -1,9 +1,9 @@
 body{background-color: black;}
-h1,h2,h3{font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif black,Arial, Helvetica, sans-serif;}
-body{font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
-h1{color:#ff5a00;font-size: 40px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;text-align: center ;}
-h2{color:#ff5a00;font-size: 30px;font-family:system-ui;;text-align: center;}
-h3{color:#ffffff;font-size: 25px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;text-align: center;}
+h1,h2,h3{font-family:arial black,Arial, Helvetica, sans-serif;}
+body{font-family:Arial,sans-serif;}
+h1{color:#ff5a00;font-size: 40px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;text-align: center ;}
+h2{color:#ff5a00;font-size: 30px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif,Sans-serif;text-align: center;}
+h3{color:#ffffff;font-size: 25px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;text-align: center;}
 
 
 .destacado{color:#ffffff;font-size: 20px;text-align: center;}
@@ -11,8 +11,27 @@ h3{color:#ffffff;font-size: 25px;font-family:system-ui, -apple-system, BlinkMacS
 .descripcion{color:#ffffff;font-size: 16 px;}
 #Inicio{
     background-color:black;
-    padding: 80px;
-    margin: 0;
+    padding: 80px 20px;
+    text-align: center;
+    
+}
+#Inicio h2{
+    color: #ff5a00;
+    font-family: Impact,sans-serif;
+    font-size: 38px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+#Inicio p{
+     color:#d6d6d6;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 19px;
+    line-height: 1.6;
+    width: 650PX;
+    margin: 0 auto;
+    padding: 12px 20px;
+    border-left: 3px solid #ff5a00;
+    border-right: 3px solid #ff5a00;
     
 }
 #Inicio img{
@@ -48,6 +67,7 @@ footer{
     background-color: #111111;
 }
 p{
+    font-family: Arial;
     color:#ffffff;
     background-color: transparent;
 }
@@ -59,17 +79,20 @@ a{
     color:white;
 }
 a:hover{
-    color:#ff5a00;
+    color:#000000;
 }
 #categorias{
-    background-color: #111111;
+    background-color:#151515;
     border:2px solid #ff5a00;
     padding: 20px;
     margin: 30px;
+
 }
+
+
 .producto{
     display: inline-block;
-    background-color:#1a1a1a;
+    background-color:#151515;
     color: white;
     text-align: center;
     width: 250px;
@@ -82,11 +105,29 @@ a:hover{
     width: 200px;
     height: auto;
 }
-.producto h3{
+#Productos h2 {
     color: #ff5a00;
+    font-family: Arial, sans-serif;
+    font-size: 38px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.producto h3{
+    color:#ff5a00;
+    font-family: Arial,sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 35px;
 }
 .producto p{
-    color: white;
+    color: #bdbdbd;
+    font-family:Arial,sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 nav{
     background-color:#ff5a00;
@@ -116,6 +157,7 @@ nav a{
     height: auto;
 }
 .oculto{display: none;}
+
 button{
     color: #ff5a00;
 }
@@ -154,8 +196,121 @@ button{
     background-color: white;
     color: #ff5a00;
 }
-/* const formulario= document.getElementByld("formulario");
-formulario.addEventListener("submit",function(event)) */
+#Categorias{
+    background-color: #151515;
+    text-align: center;
+    padding: 50px 20px;
+}
+#Categorias h2{
+    color: #ff5a00;
+    font-family:Arial,sans-serif;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+.subtitulo-categorias{
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+/* CONTENEDOR DE LAS TARJETAS*/
+.contenedor-categorias{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+ 
+/* CADA TARJERTA */
+.categoria{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+
+    background-color: #151515;
+    width: 420px;
+    min-height: 330px;
+
+    margin: 15px;
+    
+
+    border: 2px solid #ff5a00;
+    border-radius: 15px;
+
+    overflow: hidden;
+    
+}
+/* IMAGEN DE CADA CATEGORIA */
+.categoria img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+/* TITULO DE CADA TARJETA */
+.categoria h3{
+    position: absolute;
+    left: 20px;
+    bottom: 95px;
+    margin: 0;
+    color: #ff5a00;
+    font-family: Impact, sans-serif;
+    font-size: 24px;
+    z-index: 2;
+}
+
+/*DESCRIPCION */
+.categoria p{
+    position: absolute;
+    left: 20px;
+    bottom: 55px;
+    color: white;
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+    text-align: left;
+    z-index: 2;
+    margin:0;
+}
+
+/* BOTON VER PRODUCTOS*/
+.categoria a{
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+
+    
+    background-color: #ff5a00;
+    color: white;
+    text-decoration: none;
+    padding: 9px 20px;
+    border-radius: 20px;
+    font-family: Arial,sans-serif;
+    z-index: 2;
+}
+.categoria::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 55%;
+
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(0, 0, 0, 0.95)
+    );
+
+    z-index: 1;
+}
+#Contactos{
+    background-color: black;
+}
+
+
+
 
 
 
