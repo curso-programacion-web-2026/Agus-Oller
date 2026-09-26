@@ -30,10 +30,11 @@ const botonCambiar =
      } else if(contador===2){   tituloInicio.textContent="¡Todo para tu Vehiculo!";
      } else if(contador===3){
      tituloInicio.textContent="¡Gracias por visitar CR ACCESORIOS";
+     contador=0;
      }
     });
 
-const TextoInicio = document.getElementById("TextoInicio");
+const TextoInicio = document.getElementById("textoInicio");
 const disminuir = document.getElementById("disminuir");
 const normal = document.getElementById("normal");
 const aumentar = document.getElementById("aumentar");
@@ -61,3 +62,4 @@ formulario.addEventListener("submit",function(event){
     event.prevent
 }
 )
+
