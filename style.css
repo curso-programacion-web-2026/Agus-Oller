@@ -16,14 +16,23 @@ h3{color:#ffffff;font-size: 25px;font-family:'Trebuchet MS', 'Lucida Sans Unicod
     
 }
 #Inicio h2{
-    color: #ff5a00;
+    color:#ff5a00;
+    background-color: transparent;
     font-family: Impact,sans-serif;
     font-size: 38px;
     letter-spacing: 2px;
     margin-bottom: 15px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 12px 20px;
+    display: inline-block;
+    text-align: center;
+}
+#botonCambiar{
+    background-color:transparent;
 }
 #Inicio p{
-     color:#d6d6d6;
+     color:#bdbdbd;
     font-family: Trebuchet MS, sans-serif;
     font-size: 19px;
     line-height: 1.6;
@@ -32,6 +41,7 @@ h3{color:#ffffff;font-size: 25px;font-family:'Trebuchet MS', 'Lucida Sans Unicod
     padding: 12px 20px;
     border-left: 3px solid #ff5a00;
     border-right: 3px solid #ff5a00;
+    background-color: transparent;
     
 }
 #Inicio img{
@@ -305,9 +315,111 @@ button{
 
     z-index: 1;
 }
+/*CONTACTOS*/
 #Contactos{
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #111111;
+}
+#Contactos h2{
+    color: #ff5a00;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.subtitulo-contacto{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.contacto-contenedor{
+    text-align: center;
+}
+.formulario-contacto{
+    display: inline-block;
+    width: 500px;
+    max-width: 90%;
+    padding: 30px;
+    background-color:white;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+.formulario-contacto input,
+.formulario-contacto textarea{
+    width: 85%;
+    padding: 14px 18px;
+    margin: 8px;
+    background-color:white;
+    color: white;
+    border: 2px solid #ff5a00;
+    border-radius: 8px;
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+    outline: none;
+
+}
+#formulario input::placeholder,
+#formulario textarea::placeholder{
+    color:#111111;
+}
+#formulario input:focus,
+#formulario textarea:focus{
+    background-color:#151515;
+    border-color:#ff5a00;
+}
+
+.formulario-contacto textarea{
+    height: 120px;
+    resize:none ;
+}
+#formulario button{
+    margin-top: 15px;
+    padding: 12px 28px;
+    background-color: #ff5a00;
+    color:white;
+    border: 2px solid #ff5a00;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+a :hover{
     background-color: black;
 }
+.formulario-contacto button:hover{
+    background-color:transparent;
+    color: #ff5a00;
+    
+}
+a:hover{
+    color: black;
+}
+.contacto-instagram{
+    margin-top: 35px;
+}
+.contacto-instagram p{
+    color: white;
+}
+.contacto-instagram h3{
+    color: #ff5a00;
+    font-size: 22px;
+}
+.contacto-instagram a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.contacto-instagram a:hover{
+    color: #ff5a00;
+}
+
+
+
+
+
+
+
+
+
+    
 
 
 
