@@ -5,7 +5,9 @@
      <meta name="viewport"content="width=device-width" initial-scale="1.0">
      <title>accesorios para tu auto</title>
      <link rel="stylesheet" href="style.css">
-     <script src="Scrpit.js" defer></script>
+     <button id="VolverArriba">↑ VOLVER ARRIBA</button>
+     <script src="Script.js"></script>
+     
 
 </head>
 <body>
@@ -74,39 +76,44 @@
         <h3>SHAMPOOS</h3>
         <p class="oculto">
             Encontrá Shampoos y Ceras para el cuidado de tu Auto.
-        </p>
-        <button class="verMas">[Ver Mas]</button>
-    </article>    
+        </p> 
         
         <article class="producto">
             <img src="shampoo toxic shine Banana.jpeg" alt="Sampoo Banana">
             <h4>Shampoo toxic shine Banana</h4>
-            <p class="descripcion">
-                Shampoo para el lavado y cuidado del vehiculo
+            <div class="infoExtra oculto">
+                <p>Shampoo para el lavado y cuidado del vehiculo
             </p>
+            </div>
+            <button class="verMas">[Ver Mas]</button>
         </article>
         <article class="producto">
-            <img src="img/toxic shine wax.jpeg" alt="Shampoo Toxic shine wax">
+            <img src=" toxic shine wax.jpeg" alt="Shampoo Toxic shine wax">
             <H4>Shampoo toxic shine max</H4>
-            <p class="descripcion">
-                Shampoo para el lavado y cuidado del auto
+            <div class="infoExtra oculto">
+                <p>Shampoo para el lavado y cuidado del auto
             </p>
+            </div>
+            <button class="verMas">[Ver Mas]</button>
 
          </article>
         <h3>CERAS</h3>
         <article class="producto">
-            <img src=" alt="">
+            <img src="toxic shine-cera cherry.jpeg" alt="cera Cherry">
             <H4>toxic shine-Cera cherry</H4>
-            <P class="descripcion">
-                Spray de cera liquida para el cuidado y brillo de la pintura
-            </P>
+            <div class="infoExtra oculto">
+                <p>Spray de cera liquida para el cuidado y brillo de la pintura</p>
+            </div>
+            <button class="verMas">[Ver Mas]</button>
         </article>
         <article class="producto">
             <img src="toxic shine-cera ilussion.jpeg" alt="Cera ilussion">
             <H4>"Toxic shine-cera ilussion</h4>
-            <P class="descripcion">
-                Spray de cera liquida para el cuidado y brillo de la pintura
-            </P>    
+            <div class="infoExtra oculto">
+                <p> de cera liquida para el cuidado y brillo de la pintura
+            </P>  
+            </div> 
+            <button class="verMas">[Ver Mas]</button> 
         </article>
     </section>
     <section id="Productos">
@@ -180,7 +187,18 @@
             <h3>Bug Remover Limpiador</h3>
             <p>Categoría:Limpiadores-APC</p>
         </article>
-    </section>    
+    </section> 
+    <section id="carrusel">
+        <h2>PRODUCTOS EN ACCION</h2>
+        <P>Resultados que hablan por sí solos</P>
+        <div class="carrusel">
+            <button id="anterior">❮</button>
+            <img id="imagenCarrusel"
+                 src="carrusel1_lavado.png"
+                 alt="Productos para el cuidado de tu auto">
+            <button id="siguiente">❯</button> 
+        </div>
+    </section>   
     <section id="Contactos">
         <h2>CONTACTANOS</h2>
         <p>¿Tenés alguna duda sobre algún producto?</p>
@@ -198,9 +216,9 @@
         </div>
 
     </section>
-
     
-</main>
+
+
 </body>    
 </html>       
 
