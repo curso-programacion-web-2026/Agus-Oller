@@ -179,16 +179,17 @@ button{
     color: white;
 }
 .controles-texto{
-     display: inline-block;
-    width: auto;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    gap: 6px;
     padding: 8px;
-    margin-top: 15px;
+    background-color: #111111;
     border: 1px solid #ff5a00;
-    border-radius: 20px;
-
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    z-index: 1000;
 }
 .controles-texto button{
     width: 34px;
@@ -344,37 +345,18 @@ button{
 }
 .formulario-contacto input,
 .formulario-contacto textarea{
-     background-color: #1a1a1a;
+    width: 85%;
+    padding: 14px 18px;
+    margin: 8px;
+    background-color:white;
     color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 10px;
-    font-family: Arial, sans-serif;
+    border: 2px solid #ff5a00;
+    border-radius: 8px;
+    font-family: Arial,sans-serif;
     font-size: 15px;
-} 
-textarea{
-      background-color: #1a1a1a;
-     color: white;
-     border: 1px solid white;
-     border-radius: 5px;
-     padding: 10px;
-     font-family: Arial, sans-serif;
-     font-size: 15px;
-     height: 35px;
-     vertical-align: middle;
+    outline: none;
+
 }
-input{
-    background-color: #1a1a1a;
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 10px;
-    height: 35px;
-    vertical-align: middle;
-}
-
-
-
 #formulario input::placeholder,
 #formulario textarea::placeholder{
     color:#111111;
@@ -428,35 +410,11 @@ a:hover{
 .contacto-instagram a:hover{
     color: #ff5a00;
 }
-#VolverArriba{
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #ff5a00;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 18px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.verMas {
-    background-color: #ff5a00;
-    color: white;
 
-    border: none;
-    border-radius: 20px;
 
-    padding: 10px 20px;
-    margin-top: 10px;
 
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
 
-    cursor: pointer;
-}
+
 
 
 
