@@ -1,3 +1,16 @@
+:root {
+    --color-fondo: #000000;
+    --color-texto: #ffffff;
+    --color-tarjeta: #151515;
+    --color-principal: #ff5a00;
+}
+
+body.modo-claro {
+    --color-fondo: #f5f5f5;
+    --color-texto: #171717;
+    --color-tarjeta: #ffffff;
+}
+
 body{background-color: black;}
 h1,h2,h3{font-family:arial black,Arial, Helvetica, sans-serif;}
 body{font-family:Arial,sans-serif;}
@@ -166,7 +179,9 @@ nav a{
     width: 360px;
     height: auto;
 }
-.oculto{display: none;}
+.oculto{
+    display: none;
+}
 
 button{
     color: #ff5a00;
@@ -179,17 +194,18 @@ button{
     color: white;
 }
 .controles-texto{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
+      position: static;
     display: flex;
-    gap: 6px;
+    gap: 8px;
+
+    width: fit-content;
     padding: 8px;
-    background-color: #111111;
+    margin: 20px auto 0;
+
+    background-color: black;
     border: 1px solid #ff5a00;
-    border-radius: 25px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    z-index: 1000;
+    border-radius: 30px;
+    
 }
 .controles-texto button{
     width: 34px;
@@ -218,10 +234,20 @@ button{
     margin-bottom: 35px;
 }
 .subtitulo-categorias{
-    color: white;
+    text-align: center;
+    color: #dddddd;
     font-family: Arial, sans-serif;
     font-size: 18px;
     margin-bottom: 35px;
+    letter-spacing: 0.5px;
+}
+.subtitulo-categorias::after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #ff5a00;
+    margin: 15px auto 0;
 }
 /* CONTENEDOR DE LAS TARJETAS*/
 .contenedor-categorias{
@@ -264,9 +290,12 @@ button{
     bottom: 95px;
     margin: 0;
     color: #ff5a00;
-    font-family: Impact, sans-serif;
-    font-size: 24px;
+    font-family:"Arial Black",Arial, sans-serif;
+    font-size: 22px;
     z-index: 2;
+    text-shadow: 2px 2px 4px #000000;
+    letter-spacing: 0.5px;
+    font-weight: bold;
 }
 
 /*DESCRIPCION */
@@ -315,104 +344,391 @@ button{
 
     z-index: 1;
 }
-/*CONTACTOS*/
-#Contactos{
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #111111;
-}
-#Contactos h2{
-    color: #ff5a00;
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-.subtitulo-contacto{
-    color: white;
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-.contacto-contenedor{
-    text-align: center;
-}
-.formulario-contacto{
-    display: inline-block;
-    width: 500px;
-    max-width: 90%;
-    padding: 30px;
-    background-color:white;
-    border: 2px solid white;
-    border-radius: 6px;
-}
-.formulario-contacto input,
-.formulario-contacto textarea{
-    width: 85%;
-    padding: 14px 18px;
-    margin: 8px;
-    background-color:white;
-    color: white;
-    border: 2px solid #ff5a00;
-    border-radius: 8px;
-    font-family: Arial,sans-serif;
-    font-size: 15px;
-    outline: none;
-
-}
-#formulario input::placeholder,
-#formulario textarea::placeholder{
-    color:#111111;
-}
-#formulario input:focus,
-#formulario textarea:focus{
-    background-color:#151515;
-    border-color:#ff5a00;
-}
-
-.formulario-contacto textarea{
-    height: 120px;
-    resize:none ;
-}
-#formulario button{
-    margin-top: 15px;
-    padding: 12px 28px;
+.verMas{
     background-color: #ff5a00;
-    color:white;
-    border: 2px solid #ff5a00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+}
+.verMas:hover{
+    background-color: white;
+    color: #ff5a00;
+    border: 2px solid #ff5a00
+}
+/*CONTACTOS*/
+
+#Contactos {
+    background-color: #141414;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#Contactos h2 {
+    color: #ff5a00;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.subtitulo-contacto {
+    color: #dddddd;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+#formulario {
+    background-color: #1e1e1e;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #444444;
+    border-radius: 15px;
+    text-align: left;
+}
+
+#formulario label {
+    display: block;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#formulario input,
+#formulario textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #303030;
+    color: white;
+    border: 1px solid #555555;
     border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+#formulario textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+#formulario button {
+    width: 100%;
+    background-color: #ff5a00;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
 }
-a :hover{
-    background-color: black;
-}
-.formulario-contacto button:hover{
-    background-color:transparent;
+
+#formulario button:hover {
+    background-color: white;
     color: #ff5a00;
-    
 }
-a:hover{
-    color: black;
-}
-.contacto-instagram{
-    margin-top: 35px;
-}
-.contacto-instagram p{
+
+#resultado {
+    text-align: center;
+    margin-top: 15px;
     color: white;
 }
-.contacto-instagram h3{
+
+.contacto-instagram {
+    margin-top: 35px;
+}
+
+.contacto-instagram h3 {
     color: #ff5a00;
     font-size: 22px;
 }
-.contacto-instagram a{
+
+.contacto-instagram a {
     color: white;
-    font-size: 18px;
     text-decoration: none;
+    font-size: 18px;
 }
-.contacto-instagram a:hover{
+
+.contacto-instagram a:hover {
     color: #ff5a00;
 }
 
+#seleccionados{
+    text-align: center;
 
+}
+#seleccionados.producto{
+    display: inline-block;
+    vertical-align: top;
+    margin: 25px 180px;
+}
+#carrusel {
+    background-color: #141414;
+    text-align: center;
+    padding: 60px 20px;
+}
 
+#carrusel h2 {
+    color: #ff5a00;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+#carrusel p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#imagenCarrusel {
+    width: 650px;
+    max-width: 75%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #ff5a00;
+}
+
+.carrusel button {
+    background-color: #ff5a00;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.carrusel button:hover {
+    background-color: white;
+    color: #ff5a00;
+}
+#anterior,
+#siguiente {
+    background-color: #ff5a00;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.subtitulo-productos {
+    text-align: center;
+    color: #dddddd;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 15px auto 40px;
+    letter-spacing: 0.5px;
+}
+
+.subtitulo-productos::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #ff5a00;
+    margin: 15px auto 0;
+}
+#Productos {
+    text-align: center;
+}
+
+#Productos .producto {
+    display: inline-block;
+    vertical-align: top;
+    margin: 25px 20px;
+}
+#VolverArriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    background-color: #ff5a00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#VolverArriba:hover {
+    background-color: white;
+    color: #ff5a00;
+    border: 1px solid #ff5a00;
+}
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.control-tema {
+    text-align: center;
+    margin: 20px;
+}
+
+#theme-toggle {
+    background-color: #ff5a00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+body.modo-claro {
+    background-color: #f3f3f3;
+    color: #222222;
+}
+
+body.modo-claro #Inicio,
+body.modo-claro #categorias,
+body.modo-claro #seleccionados,
+body.modo-claro #Productos,
+body.modo-claro #carrusel,
+body.modo-claro #Contactos {
+    background-color: #f3f3f3;
+    color: #222222;
+}
+
+body.modo-claro .producto,
+body.modo-claro .categoria {
+    background-color: #ffffff;
+    color: #222222;
+    border-color: #ff5a00;
+}
+
+body.modo-claro main p,
+body.modo-claro main h3,
+body.modo-claro main h4 {
+    color: #222222;
+}
+/* MODO CLARO - GRIS PLATA Y NEGRO */
+
+body.modo-claro {
+    background-color: #d9d9d9;
+    color: #222222;
+}
+
+body.modo-claro #Inicio,
+body.modo-claro #categorias,
+body.modo-claro #seleccionados,
+body.modo-claro #Productos,
+body.modo-claro #carrusel,
+body.modo-claro #Contactos {
+    background-color: #d9d9d9;
+}
+/* LETRAS DE LAS CATEGORÍAS EN MODO CLARO */
+
+body.modo-claro .categoria h3 {
+    color: white;
+}
+
+body.modo-claro .categoria p {
+    color: white;
+}
+/* ENCABEZADO BLANCO EN MODO CLARO */
+
+body.modo-claro header {
+    background-color: white;
+}
+
+/* BOTONES DE LETRA EN MODO CLARO */
+
+body.modo-claro .controles-texto {
+    background-color: white;
+    border: 2px solid #ff5a00;
+    border-radius: 30px;
+}
+/* SUBTÍTULO DEL ENCABEZADO EN MODO CLARO */
+
+body.modo-claro header .destacado {
+    color: #222222;
+}
+/* CUADRO DE BIENVENIDA EN MODO CLARO */
+
+body.modo-claro #botonCambiar {
+    border: 2px solid #ff5a00;
+    background-color: white;
+}
+
+body.modo-claro #tituloInicio {
+    border: none;
+}
+/* SUBTÍTULO DEL ENCABEZADO - MODO CLARO */
+
+body.modo-claro header .destacado {
+    color: #222222;
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+body.modo-claro header .destacado::after {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 3px;
+    background-color: #ff5a00;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+/* SUBTÍTULO DEL ENCABEZADO - AMBOS MODOS */
+
+header .destacado {
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+}
+
+/* LÍNEA NARANJA DECORATIVA */
+
+header .destacado::after {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 3px;
+    background-color: #ff5a00;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+/* COLOR DEL TEXTO EN MODO CLARO */
+
+body.modo-claro header .destacado {
+    color: #222222;
+}
+/* IMÁGENES DE LOS PRODUCTOS */
+
+.producto img {
+    border-radius: 12px;
+}
 
 
 
