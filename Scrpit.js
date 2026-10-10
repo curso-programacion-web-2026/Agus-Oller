@@ -71,5 +71,51 @@ formulario.addEventListener("submit",function(event){
     }
 
 });
+const imagenesCarrusel = [
+    "carrusel1_lavado.png",
+    "carrusel2_cera.png",
+    "carrusel3_interior.png",
+    "carrusel4_exterior.png"
+];
 
+let imagenActual = 0;
 
+const imagenCarrusel = document.getElementById("imagenCarrusel");
+const botonSiguiente = document.getElementById("siguiente");
+const botonAnterior = document.getElementById("anterior");
+
+botonSiguiente.addEventListener("click", function() {
+
+    imagenActual++;
+
+    if (imagenActual >= imagenesCarrusel.length) {
+        imagenActual = 0;
+    }
+
+    imagenCarrusel.src = imagenesCarrusel[imagenActual];
+});
+
+const botonVolver = document.getElementById("VolverArriba");
+
+window.addEventListener("scroll", function() {
+
+    if (window.scrollY > 200) {
+        botonVolver.style.display = "block";
+    } else {
+        botonVolver.style.display = "none";
+    }
+
+});
+const botonTema = document.getElementById("theme-toggle");
+
+botonTema.addEventListener("click", function() {
+
+    document.body.classList.toggle("modo-claro");
+
+    if (document.body.classList.contains("modo-claro")) {
+        botonTema.textContent = "🌙 Cambiar a Modo Oscuro";
+    } else {
+        botonTema.textContent = "☀️ Cambiar a Modo Claro";
+    }
+
+});
