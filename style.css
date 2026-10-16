@@ -126,7 +126,8 @@ a:hover{
 }
 .producto img{
     width: 200px;
-    height: auto;
+    height: 220px;
+    object-fit: contain;
 }
 #Productos h2 {
     color: #ff5a00;
@@ -466,7 +467,12 @@ button{
 #seleccionados.producto{
     display: inline-block;
     vertical-align: top;
-    margin: 25px 180px;
+    margin: 25px 15px;
+}
+#seleccionados .producto h3 {
+    color: #ff5a00;
+    font-size: 22px;
+    font-weight: bold;
 }
 #carrusel {
     background-color: #141414;
@@ -651,7 +657,7 @@ body.modo-claro .categoria p {
 /* ENCABEZADO BLANCO EN MODO CLARO */
 
 body.modo-claro header {
-    background-color: white;
+    background-color:white;
 }
 
 /* BOTONES DE LETRA EN MODO CLARO */
@@ -729,8 +735,364 @@ body.modo-claro header .destacado {
 .producto img {
     border-radius: 12px;
 }
+/* TARJETAS DE PRODUCTOS EN MODO CLARO */
 
+body.modo-claro .producto {
+    background-color: #eeeeee;
+    border: 2px solid #ff5a00;
+    border-radius: 12px;
+    color: #222222;
+}
 
+/* TÍTULOS DE LOS PRODUCTOS */
+
+body.modo-claro .producto h3,
+body.modo-claro .producto h4 {
+    color: #222222;
+}
+
+/* DESCRIPCIONES */
+
+body.modo-claro .producto p {
+    color: #333333;
+}
+/* TARJETAS GRISES SOLO EN MODO CLARO */
+
+body.modo-claro #Productos .producto {
+    background-color: #eeeeee;
+    color: #222222;
+}
+/* FONDO DEL LOGO EN MODO CLARO */
+
+body.modo-claro header img {
+    background-color: #252525;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 25px ;
+}
+/* FORMULARIO EN MODO CLARO */
+
+body.modo-claro #formulario {
+    background-color: #eeeeee;
+    color: #222222;
+    border: 2px solid #ff5a00;
+    border-radius: 15px;
+}
+
+body.modo-claro #formulario label {
+    color: #222222;
+}
+/* MENSAJE DEL FORMULARIO EN MODO CLARO */
+
+body.modo-claro #resultado {
+    color: #ff5a00;
+    font-weight: bold;
+}
+/* USUARIO DE INSTAGRAM EN MODO CLARO */
+
+body.modo-claro #Contactos a {
+    color: #ff5a00;
+    font-weight: bold;
+}
+/* CAMBIO DE COLOR AL PASAR O TOCAR */
+
+body.modo-claro #Contactos a:hover,
+body.modo-claro #Contactos a:active {
+    color: #555555;
+}
+/* TEXTO DE BIENVENIDA EN MODO CLARO */
+
+body.modo-claro #textoInicio {
+    color: #333333;
+}
+/* TARJETAS DEL APARTADO PRODUCTOS */
+
+#Productos .producto {
+    width: 250px;
+    height: auto;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+/* TARJETAS DE PRODUCTOS */
+
+#Productos .producto {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: top;
+
+    width: 280px;
+    min-height: 0;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-color: #151515;
+    border: 2px solid #ff5a00;
+    border-radius: 15px;
+}
+   
+
+/* MISMO ESPACIO PARA LOS TITULOS */
+
+#Productos .producto h3 {
+    height: 120px;
+    margin-bottom: 10px;
+}
+/* TITULOS DE TODAS LAS TARJETAS */
+
+.producto h3 {
+    color: #ff5a00;
+    font-size: 22px;
+    font-weight: bold;
+}
+/* CATEGORIA CON ESTILO DE BOTON */
+
+#Productos .categoria-producto {
+    display: inline-block;
+    background-color: #303030;
+    color: white;
+    border: 1px solid #ff5a00;
+    border-radius: 25px;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* PRECIO CON ESTILO DE BOTON */
+
+#Productos .precio-producto {
+    display: inline-block;
+    background-color: #ff5a00;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+/* CENTRAR LOS CINCO LIMPIADORES */
+
+#Productos > article.producto:nth-last-of-type(-n+5) {
+    position: relative;
+}
+
+#Productos > article.producto:nth-last-of-type(2) {
+    margin-left: 180px;
+}
+
+#Productos > article.producto:last-of-type {
+    margin-right: 180px;
+}
+/* TARJETAS DE SHAMPOOS */
+
+#seleccionados .producto {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: top;
+}
+
+/* TITULOS */
+
+#seleccionados .producto h4 {
+    color: #ff5a00;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* BOTON VER MAS */
+
+#seleccionados .producto .verMas {
+    order: 3;
+    margin-top: 15px;
+}
+
+/* PRECIO DE LOS SHAMPOOS */
+
+#seleccionados .producto > p {
+    order: 4;
+    background-color: #ff5a00;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+/* MISMO COLOR PARA LAS DESCRIPCIONES DE SHAMPOOS */
+
+#seleccionados .producto .infoExtra p,
+#seleccionados .producto .infoExtra {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+/* DESCRIPCIONES DE SHAMPOOS EN MODO CLARO */
+
+body.modo-claro #seleccionados .producto .infoExtra,
+body.modo-claro #seleccionados .producto .infoExtra p {
+    color: #222222;
+}
+/* SUBTITULO DEL CARRUSEL */
+
+#carrusel p {
+    text-align: center;
+    text-decoration: none;
+}
+
+/* RAYITA NARANJA CENTRADA */
+
+#carrusel p::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    background-color: #ff5a00;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+/* COLOR DEL TEXTO EN MODO CLARO */
+
+body.modo-claro #carrusel p {
+    color: #222222;
+}
+/* DISEÑO ADAPTABLE PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    /* Evitar desplazamiento horizontal */
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    /* Imágenes adaptables */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Encabezado */
+    header {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    /* Menú de navegación */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    /* Títulos */
+    section h2,
+    section h3 {
+        max-width: 100%;
+    }
+
+    /* Tarjetas de productos */
+    #Productos .producto,
+    #seleccionados .producto {
+        width: 90%;
+        max-width: 320px;
+        box-sizing: border-box;
+        margin: 15px auto;
+    }
+
+    /* Imágenes de los productos */
+    .producto img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Carrusel */
+    .carrusel {
+        max-width: 100%;
+    }
+
+    #imagenCarrusel {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Formulario */
+    #formulario {
+        width: 95%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 600px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+
+    header .logo {
+        width: 180px;
+        max-width: 80%;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 22px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    header .destacado {
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+/* CATEGORIAS ADAPTADAS A CELULARES */
+
+@media (max-width: 600px) {
+
+    .categoria {
+        width: 100%;
+        max-width: 340px;
+        min-height: 0;
+        margin: 15px auto;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .categoria img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
 
 
 
