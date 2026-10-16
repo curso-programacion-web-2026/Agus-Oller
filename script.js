@@ -106,11 +106,18 @@ window.addEventListener("scroll", function() {
     }
 
 });
+botonVolver.addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
 const botonTema = document.getElementById("theme-toggle");
 
-botonTema.addEventListener("click", function(){
+botonTema.addEventListener("click", function() {
 
-   
+    document.body.classList.toggle("modo-claro");
+
     if (document.body.classList.contains("modo-claro")) {
         botonTema.textContent = "🌙 Cambiar a Modo Oscuro";
     } else {
